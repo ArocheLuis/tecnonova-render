@@ -1,3 +1,4 @@
 .env
+.env copy
 node_modules/
 .github
