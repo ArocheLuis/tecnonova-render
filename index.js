@@ -10,7 +10,7 @@ const app=express();
 app.use(cors({
   origin: [
     'http://localhost:5173',           
-    'https://tecnonova-render.onrender.com' 
+    'https://tecnonova-render.onrender.com/api/auth/register' 
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
