@@ -4,7 +4,7 @@ import { getConnection } from "./src/config/db.js";
 import authRoutes from "./src/routes/auth.routes.js";
 import cors from "cors";
 
-
+//comentario
 dotenv.config();
 const app=express();
 app.use(cors({
