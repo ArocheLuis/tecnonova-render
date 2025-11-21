@@ -4,10 +4,17 @@ import { getConnection } from "./src/config/db.js";
 import authRoutes from "./src/routes/auth.routes.js";
 import cors from "cors";
 
-app.use(cors());
 
 dotenv.config();
 const app=express();
+app.use(cors({
+  origin: [
+    'http://localhost:5173',           
+    'https://tecnonova-render.onrender.com' 
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true
+}));
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
