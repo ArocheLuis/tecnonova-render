@@ -10,12 +10,12 @@ const app=express();
 app.use(cors({
   origin: [
     'http://localhost:5173',           
-    'https://tecnonova-render.onrender.com/api/auth/register' 
+    'https://tecnonova-render.onrender.com' 
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 }));
-app.options('*', cors());
+
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
