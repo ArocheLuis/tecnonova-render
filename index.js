@@ -9,7 +9,8 @@ dotenv.config();
 const app=express();
 app.use(cors({
   origin: [
-    'http://localhost:5173',           
+    'http://localhost:5173',
+    'https://tecnovafront.vercel.app/',           
     'https://tecnonova-render.onrender.com' 
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
